@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg-success p-2 text-dark bg-opacity-25">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Musdalifah Abu Bakar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="JTIK.html">JTIK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="artikel.html"> Biodata</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pendidikan.html"> Pendidikan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="jadwalkuliah.html"> Jadwal Kuliah</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buku_tamu.html"> Buku Tamu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascrip.html"> Javascrip</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="kalkulator.html"> Kalkulator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- akhir navbar -->
+      <br />
+      <br />
+      <br />
+      <div class="text-center text-success">
+        <!-- luas persegi -->
+        <h4 class="text-center text-success"><b>Aplikasi Program Kalkulator</b></h4>
+        <br />
+
+        <label for="">Bil 1</label>
+        <input type="number" id="bil1" />
+        <br />
+        <br />
+        <label for="">Bil 2</label>
+        <input type="number" id="bil2" />
+        <br />
+        <br />
+        <label for="">Hasil</label>
+        <input type="number" id="hasil" />
+        <br />
+        <br />
+        <button onclick="tambah()">+</button>
+        <button onclick="kurang()">-</button>
+        <button onclick="kali()">x</button>
+        <button onclick="bagi()">/</button>
+
+        <script>
+          var bil1 = document.getElementById("bil1");
+          var bil2 = document.getElementById("bil2");
+          var hasil = document.getElementById("hasil");
+
+          //Fungsion Tambah(+)
+          function tambah() {
+            hasil.value = Number(bil1.value) + Number(bil2.value);
+          }
+
+          //Fungsion Kurang(-)
+          function kurang() {
+            hasil.value = Number(bil1.value) - Number(bil2.value);
+          }
+
+          //Fungsion Tambah(+)
+          function kali() {
+            hasil.value = Number(bil1.value) * Number(bil2.value);
+          }
+
+          //Fungsion Tambah(+)
+          function bagi() {
+            hasil.value = Number(bil1.value) / Number(bil2.value);
+          }
+        </script>
+        <!-- akhir periksa angka-->
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#F3F4F5"
+          fill-opacity="1"
+          d="M0,64L24,58.7C48,53,96,43,144,58.7C192,75,240,117,288,128C336,139,384,117,432,96C480,75,528,53,576,48C624,43,672,53,720,69.3C768,85,816,107,864,96C912,85,960,43,1008,32C1056,21,1104,43,1152,58.7C1200,75,1248,85,1296,85.3C1344,85,1392,75,1416,69.3L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+        ></path>
+      </svg>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <!-- footer -->
+      <div class="row">
+        <div class="col-12 bg-success p-2 text-white bg-opacity-75 text-center p-1">by@belajar.yuk!</div>
+      </div>
+      <!-- akhir footer -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
